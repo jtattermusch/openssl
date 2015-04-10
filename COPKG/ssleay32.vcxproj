@@ -197,7 +197,9 @@
     <ClCompile Include="..\ssl\s3_srvr.c" />
     <ClCompile Include="..\ssl\s3_cbc.c" />
     <ClCompile Include="..\ssl\d1_meth.c" />
-    <ClCompile Include="..\ssl\d1_enc.c" />
+	<ClCompile Include="..\ssl\ssl_conf.c" />
+	<ClCompile Include="..\ssl\t1_ext.c" />
+	<ClCompile Include="..\ssl\t1_trce.c" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\ms\version32.rc" />

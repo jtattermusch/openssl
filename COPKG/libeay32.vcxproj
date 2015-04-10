@@ -210,11 +210,13 @@
     <ClCompile Include="..\crypto\x509v3\v3_pcia.c" />
     <ClCompile Include="..\crypto\x509v3\pcy_cache.c" />
     <ClCompile Include="..\crypto\x509v3\v3_extku.c" />
+	<ClCompile Include="..\crypto\x509v3\v3_scts.c" />
     <ClCompile Include="..\crypto\txt_db\txt_db.c" />
     <ClCompile Include="..\crypto\ecdh\ech_lib.c" />
     <ClCompile Include="..\crypto\ecdh\ech_key.c" />
     <ClCompile Include="..\crypto\ecdh\ech_err.c" />
     <ClCompile Include="..\crypto\ecdh\ech_ossl.c" />
+	<ClCompile Include="..\crypto\ecdh\ech_kdf.c" />
     <ClCompile Include="..\crypto\idea\i_cfb64.c" >
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
@@ -419,7 +421,6 @@
     <ClCompile Include="..\crypto\engine\tb_rsa.c" />
     <ClCompile Include="..\crypto\engine\tb_cipher.c" />
     <ClCompile Include="..\crypto\engine\tb_asnmth.c" />
-    <ClCompile Include="..\crypto\engine\eng_rsax.c" />
     <ClCompile Include="..\crypto\engine\eng_err.c" />
     <ClCompile Include="..\crypto\engine\eng_ctrl.c" />
     <ClCompile Include="..\crypto\engine\tb_dh.c" />
@@ -476,6 +477,8 @@
     <ClCompile Include="..\crypto\dh\dh_prn.c" />
     <ClCompile Include="..\crypto\dh\dh_lib.c" />
     <ClCompile Include="..\crypto\dh\dh_gen.c" />
+	<ClCompile Include="..\crypto\dh\dh_kdf.c" />
+	<ClCompile Include="..\crypto\dh\dh_rfc5114.c" />
     <ClCompile Include="..\crypto\x509\x509_req.c" />
     <ClCompile Include="..\crypto\x509\x509_txt.c" />
     <ClCompile Include="..\crypto\x509\by_file.c" />
@@ -627,6 +630,7 @@
     <ClCompile Include="..\crypto\modes\ctr128.c" />
     <ClCompile Include="..\crypto\modes\cts128.c" />
     <ClCompile Include="..\crypto\modes\gcm128.c" />
+	<ClCompile Include="..\crypto\modes\wrap128.c" />
     <ClCompile Include="..\crypto\err\err_all.c" />
     <ClCompile Include="..\crypto\err\err_prn.c" />
     <ClCompile Include="..\crypto\err\err.c" />
@@ -716,7 +720,6 @@
     <ClCompile Include="..\crypto\evp\e_rc4.c" />
     <ClCompile Include="..\crypto\evp\bio_md.c" />
     <ClCompile Include="..\crypto\evp\m_md5.c" />
-    <ClCompile Include="..\crypto\evp\evp_fips.c" />
     <ClCompile Include="..\crypto\evp\p_open.c" />
     <ClCompile Include="..\crypto\evp\m_mdc2.c" />
     <ClCompile Include="..\crypto\evp\evp_pbe.c" />
@@ -743,6 +746,7 @@
     <ClCompile Include="..\crypto\evp\m_md2.c" />
     <ClCompile Include="..\crypto\evp\c_alld.c" />
     <ClCompile Include="..\crypto\evp\e_rc5.c" />
+	<ClCompile Include="..\crypto\evp\e_aes_cbc_hmac_sha256.c" />
     <ClCompile Include="..\crypto\evp\pmeth_fn.c" />
     <ClCompile Include="..\crypto\cms\cms_io.c" />
     <ClCompile Include="..\crypto\cms\cms_cd.c" />
@@ -757,6 +761,7 @@
     <ClCompile Include="..\crypto\cms\cms_ess.c" />
     <ClCompile Include="..\crypto\cms\cms_sd.c" />
     <ClCompile Include="..\crypto\cms\cms_err.c" />
+	<ClCompile Include="..\crypto\cms\cms_kari.c" />
     <ClCompile Include="..\crypto\hmac\hm_pmeth.c" />
     <ClCompile Include="..\crypto\hmac\hmac.c" />
     <ClCompile Include="..\crypto\hmac\hm_ameth.c" />
