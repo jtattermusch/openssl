@@ -1,4 +1,3 @@
-@echo off
 setlocal
 
 if "%1"=="clean" goto :clean
@@ -18,11 +17,11 @@ call :build Win32 Release v120 || goto :eof
 call :build Win32 Debug v120 || goto :eof
 endlocal
 
-setlocal
-call "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" amd64
-call :build x64 Release v110 || goto :eof
-call :build x64 Debug v110 || goto :eof
-endlocal
+rem setlocal
+rem call "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" amd64
+rem call :build x64 Release v110 || goto :eof
+rem call :build x64 Debug v110 || goto :eof
+rem endlocal
 
 setlocal
 call "C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\vcvarsall.bat" x86
@@ -30,11 +29,11 @@ call :build Win32 Release v110 || goto :eof
 call :build Win32 Debug v110 || goto :eof
 endlocal
 
-setlocal
-call "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat" amd64
-call :build x64 Release v100 || goto :eof
-call :build x64 Debug v100 || goto :eof
-endlocal
+rem setlocal
+rem call "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat" amd64
+rem call :build x64 Release v100 || goto :eof
+rem call :build x64 Debug v100 || goto :eof
+rem endlocal
 
 setlocal
 call "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\vcvarsall.bat" x86
