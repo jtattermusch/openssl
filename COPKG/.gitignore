@@ -1,0 +1,9 @@
+*.nupkg
+*.def
+/nuget.exe
+/packages
+/Debug
+/Release
+/output
+/x64
+
