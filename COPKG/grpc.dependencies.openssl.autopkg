@@ -40,7 +40,7 @@ nuget {
 		  #output {
               package = redist;
           };
-		  #destination = \build\net45;  // TODO(jtattermusch): use for broader variety of target frameworks.
+		  #destination = \build\portable-net45;
 		  "managed_targets\${package-id}.redist.targets";
 		  "managed_targets\${package-id}.redist.props";
 		};

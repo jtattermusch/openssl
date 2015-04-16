@@ -33,8 +33,8 @@
   </PropertyGroup>
   <Import Project="$(CoAppEtcDirectory)vcxproj.inc" Condition="Exists('$(CoAppEtcDirectory)vcxproj.inc')" />
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <Import Condition="exists('.\packages\zlib\build\native\zlib.props')" Project=".\packages\zlib\build\native\zlib.props" />
-  <Import Condition="exists('.\packages\zlib.redist\build\native\zlib.redist.props')" Project=".\packages\zlib.redist\build\native\zlib.redist.props" />
+  <Import Condition="exists('.\packages\grpc.dependencies.zlib.1.2.8.8\build\native\grpc.dependencies.zlib.props')" Project=".\packages\grpc.dependencies.zlib.1.2.8.8\build\native\grpc.dependencies.zlib.props" />
+  <Import Condition="exists('.\packages\grpc.dependencies.zlib.redist.1.2.8.8\build\native\grpc.dependencies.zlib.redist.props')" Project=".\packages\grpc.dependencies.zlib.redist.1.2.8.8\build\native\grpc.dependencies.zlib.redist.props" />
   <ImportGroup Label="ExtensionSettings" />
   <ImportGroup Label="PropertySheets">
     <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" />
@@ -205,8 +205,8 @@
     <ResourceCompile Include="..\ms\version32.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <Import Condition="exists('.\packages\zlib\build\native\zlib.targets')" Project=".\packages\zlib\build\native\zlib.targets" />
-  <Import Condition="exists('.\packages\zlib.redist\build\native\zlib.redist.targets')" Project=".\packages\zlib.redist\build\native\zlib.redist.targets" />
+  <Import Condition="exists('.\packages\grpc.dependencies.zlib.1.2.8.8\build\native\grpc.dependencies.zlib.targets')" Project=".\packages\grpc.dependencies.zlib.1.2.8.8\build\native\grpc.dependencies.zlib.targets" />
+  <Import Condition="exists('.\packages\grpc.dependencies.zlib.redist.1.2.8.8\build\native\grpc.dependencies.zlib.redist.targets')" Project=".\packages\grpc.dependencies.zlib.redist.1.2.8.8\build\native\grpc.dependencies.zlib.redist.targets" />
   <ImportGroup Label="ExtensionTargets" />
   <PropertyGroup>
     <Build-Perl-zlib Condition="'$(Linkage-zlib)'=='dynamic'">zlib-dynamic</Build-Perl-zlib>

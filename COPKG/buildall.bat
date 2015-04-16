@@ -1,4 +1,8 @@
 
+rem Restore using NuGet dependencies (Download NuGet from nuget.org and put it in this directory first)
+nuget restore  || goto eof:
+
+
 setlocal
 rem First do a bit of hacking to make sure we have headers ready in ..\inc32
 cd ..
