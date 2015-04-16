@@ -791,7 +791,7 @@
         Command="
             perl Configure no-rc5 no-idea enable-mdc2 threads $(Build-Perl-zlib) $(Build-Perl-dll) $(Build-Perl-asm) $(Build-Perl-platform)
             perl util\mkfiles.pl >MINFO
-            perl .\util\mkdef.pl NT libeay >.\copkg\libeay32.def
+            perl .\util\mkdef.pl 32 libeay >.\copkg\libeay32.def
         "
         WorkingDirectory="$(MSBuildThisFileDirectory)..\" />
     <Copy 
