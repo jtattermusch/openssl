@@ -27,7 +27,7 @@ nuget {
 
     dependencies {
         packages : {
-            grpc.dependencies.zlib/1.2.8.8
+            grpc.dependencies.zlib/1.2.8.9
         };
     }
     
